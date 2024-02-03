@@ -1,51 +1,45 @@
-import { motion } from 'framer-motion'
-import { navVariants } from '../utils/motion'
-import { whichRideLogo } from '../assets/images'
-import { navLinks } from '../constants'
-import { NavLink } from 'react-router-dom'
+import { motion } from "framer-motion";
+import { navVariants } from "../utils/motion";
+import { mainLogo, whichRideLogo } from "../assets/images";
+import { navLinks } from "../constants";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <motion.nav
+    <motion.div
       variants={navVariants}
-      initial='hidden'
-      whileInView={'show'}
-      className={` h-[85px] flex bg-red-900 w-full`}
+      initial="hidden"
+      whileInView={"show"}
+      className={` h-[85px] flex w-full justify-between pl-[125px] pr-[130px]`}
     >
-      <div className='w-[168px] h-[40px]'>
-        <img
-          src={whichRideLogo}
-          alt='whichride Logo'
-          className='w-full h-full'
-        />
+      <div className="  flex items-end ">
+        <img src={mainLogo} alt="whichride Logo" />
       </div>
-      <div className=''>
-        <ul className='w-[90%] flex  h-full items-center justify-evenly max-md:hidden z-[4] bg-white'>
+      <div className="">
+        <ul className=" flex gap-[33px]  h-full mt-[55px] text-mainBlack font-[ceraProBold]">
           {navLinks?.map((item, index) => {
             return (
               <NavLink
                 key={index}
-                style={{ textDecoration: 'none' }}
+                style={{ textDecoration: "none" }}
                 to={item.url}
               >
                 {({ isActive }) => (
                   <li
-                    className={`leading-normal text-[14px]   font-semibold ${
-                      isActive
-                        ? 'text-[#575757] underline underline-offset-4'
-                        : 'text-[#aaaaaa]'
+                    className={` text-[14px] font-light ${
+                      isActive ? "text-mainBlack " : "text-mainBlack"
                     }`}
                   >
                     {item?.title}
                   </li>
                 )}
               </NavLink>
-            )
+            );
           })}
         </ul>
       </div>
-    </motion.nav>
-  )
-}
+    </motion.div>
+  );
+};
 
-export default Navbar
+export default Navbar;
