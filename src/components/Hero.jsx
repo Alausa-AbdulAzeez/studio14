@@ -4,7 +4,7 @@ import { slideIn } from "../utils/motion";
 
 const Hero = () => {
   return (
-    <div className="pl-[129px] pr-[76px] flex">
+    <div className="pl-[129px] pr-[76px] flex min-h-[550px] h-[calc(100vh-85px)] overflow-x-hidden">
       <motion.div
         className="flex-1 pt-[250px] text-mainBlack "
         variants={slideIn("left", "tween", 0.2, 1)}

@@ -6,6 +6,8 @@ export default {
       colors: {
         mainBlack: "#232C35",
         mainGray: "#4F4F4F",
+        mainPurple: "#5C1A8D",
+        mainYellow: "#F2C94C",
       },
     },
   },

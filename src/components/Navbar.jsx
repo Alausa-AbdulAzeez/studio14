@@ -16,7 +16,7 @@ const Navbar = () => {
         <img src={mainLogo} alt="whichride Logo" />
       </div>
       <div className="">
-        <ul className=" flex gap-[33px]  h-full mt-[55px] text-mainBlack font-[ceraProBold]">
+        <ul className=" flex gap-[33px]  mt-[55px] text-mainBlack font-[ceraProBold]">
           {navLinks?.map((item, index) => {
             return (
               <NavLink
