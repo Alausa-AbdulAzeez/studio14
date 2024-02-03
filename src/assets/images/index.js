@@ -1,7 +1,7 @@
 import whichRideHeroImg from "./whichRideHeroImg.svg";
 import whichRideIcon from "./whichRideIcon.svg";
 import whichRideLogo from "./whichRideLogo.svg";
-import iphoneX from "./iphoneX.svg";
+import iPhoneX from "./iPhoneX.svg";
 import moreChoices from "./moreChoices.svg";
 import moreChoicesBlue from "./moreChoicesBlue.svg";
 import moreChoicesYellow from "./moreChoicesYellow.svg";
@@ -13,7 +13,7 @@ export {
   whichRideIcon,
   whichRideLogo,
   mainLogo,
-  iphoneX,
+  iPhoneX,
   moreChoices,
   moreChoicesBlue,
   moreChoicesYellow,

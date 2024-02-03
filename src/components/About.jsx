@@ -1,9 +1,9 @@
 import React from "react";
-import { iphoneX } from "../assets/images";
 import { bookingSteps } from "../constants";
 import BookingSteps from "./BookingSteps";
 import { navVariants, slideIn } from "../utils/motion";
 import { motion } from "framer-motion";
+import { iPhoneX } from "../assets/images";
 
 const About = () => {
   return (
@@ -30,7 +30,7 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
           >
-            <img src={iphoneX} alt="phone" />
+            <img src={iPhoneX} alt="phone" />
           </motion.div>
           <div className="flex-1 flex flex-col justify-center gap-[39px]">
             {bookingSteps?.map((bookingStep, index) => (
