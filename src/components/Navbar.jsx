@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
 import { mainLogo, whichRideIcon } from "../assets/images";
 import { navLinks } from "../constants";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,9 +12,17 @@ const Navbar = () => {
       whileInView={"show"}
       className={` h-[85px] max-sm:h-[55px] flex w-full justify-between pl-[125px] pr-[130px] max-sm:pl-[20px] max-sm:pr-[20px]  max-md:pr-[50px] max-md:pl-[50px] max-lg:pr-[80px] max-lg:pl-[80px]  max-md:overflow-scroll max-sm:pt-2 `}
     >
-      <div className="  flex items-end max-md:items-center">
-        <img src={mainLogo} alt="whichride Logo" className="hidden sm:block" />
-        <img src={whichRideIcon} alt="whichride Logo" className="sm:hidden" />
+      <div className="flex items-end max-md:items-center">
+        <Link to={"/"}>
+          <img
+            src={mainLogo}
+            alt="whichride Logo"
+            className="hidden sm:block"
+          />
+        </Link>
+        <Link to={"/"}>
+          <img src={whichRideIcon} alt="whichride Logo" className="sm:hidden" />
+        </Link>
       </div>
       <div className="max-md:flex max-md:items-center">
         <ul className=" flex gap-[33px]  mt-[55px] max-md:mt-0 text-mainBlack font-[ceraProBold] max-md:gap-5 ">
