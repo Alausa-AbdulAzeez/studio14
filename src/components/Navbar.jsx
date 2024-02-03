@@ -35,7 +35,7 @@ const Navbar = () => {
               >
                 {({ isActive }) => (
                   <li
-                    className={` text-[14px] font-light max-sm:text-[10px] ${
+                    className={` text-[14px] font-light max-sm:text-[12px] ${
                       isActive ? "text-mainBlack " : "text-mainBlack"
                     }`}
                   >
