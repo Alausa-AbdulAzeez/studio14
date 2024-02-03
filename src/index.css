@@ -8,31 +8,36 @@
   box-sizing: border-box;
 }
 
+/* styles.css or any other CSS file */
+.custom-placeholder-color::placeholder {
+  color: #fff;
+}
+
 @font-face {
-  font-family: 'ceraProBlack';
-  src: url('./assets/fonts/ceraPro/CeraProBlack.otf') format('opentype');
+  font-family: "ceraProBlack";
+  src: url("./assets/fonts/ceraPro/CeraProBlack.otf") format("opentype");
 }
 @font-face {
-  font-family: 'ceraProBlack';
-  src: url('./assets/fonts/ceraPro/CeraProBlack.otf') format('opentype');
+  font-family: "ceraProBlack";
+  src: url("./assets/fonts/ceraPro/CeraProBlack.otf") format("opentype");
 }
 @font-face {
-  font-family: 'ceraProBlackItalic';
-  src: url('./assets/fonts/ceraPro/CeraProBlackItalic.otf') format('opentype');
+  font-family: "ceraProBlackItalic";
+  src: url("./assets/fonts/ceraPro/CeraProBlackItalic.otf") format("opentype");
 }
 @font-face {
-  font-family: 'ceraProBold';
-  src: url('./assets/fonts/ceraPro/CeraProBold.otf') format('opentype');
+  font-family: "ceraProBold";
+  src: url("./assets/fonts/ceraPro/CeraProBold.otf") format("opentype");
 }
 @font-face {
-  font-family: 'ceraProLight';
-  src: url('./assets/fonts/ceraPro/CeraProLight.otf') format('opentype');
+  font-family: "ceraProLight";
+  src: url("./assets/fonts/ceraPro/CeraProLight.otf") format("opentype");
 }
 @font-face {
-  font-family: 'ceraProMedium';
-  src: url('./assets/fonts/ceraPro/CeraProMedium.otf') format('opentype');
+  font-family: "ceraProMedium";
+  src: url("./assets/fonts/ceraPro/CeraProMedium.otf") format("opentype");
 }
 @font-face {
-  font-family: 'ceraProRegularItalic';
-  src: url('./assets/fonts/ceraPro/CeraProRegularItalic.otf') format('opentype');
+  font-family: "ceraProRegularItalic";
+  src: url("./assets/fonts/ceraPro/CeraProRegularItalic.otf") format("opentype");
 }

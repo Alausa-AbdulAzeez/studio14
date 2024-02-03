@@ -1,4 +1,5 @@
 import { About, Hero, Navbar, WhyWhichride } from "../components";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -7,6 +8,7 @@ const Home = () => {
       <Hero />
       <About />
       <WhyWhichride />
+      <Footer />
     </div>
   );
 };
