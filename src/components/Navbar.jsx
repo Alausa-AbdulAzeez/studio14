@@ -10,7 +10,7 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView={"show"}
-      className={` h-[85px] max-sm:h-[55px] flex w-full justify-between pl-[125px] pr-[130px] max-sm:pl-[20px] max-sm:pr-[20px]  max-md:pr-[50px] max-md:pl-[50px] max-lg:pr-[80px] max-lg:pl-[80px]  max-md:overflow-scroll max-sm:pt-2 `}
+      className={` h-[85px] max-sm:h-[55px] flex w-full justify-between pl-[125px] pr-[130px] max-sm:pl-[20px] max-sm:pr-[20px]  max-md:pr-[50px] max-md:pl-[50px] max-lg:pr-[80px] max-lg:pl-[80px]  max-sm:pt-2 `}
     >
       <div className="flex items-end max-md:items-center">
         <Link to={"/"}>

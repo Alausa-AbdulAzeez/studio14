@@ -7,7 +7,7 @@ import { iPhoneX } from "../assets/images";
 
 const About = () => {
   return (
-    <div className="min-h-[1110px] bg-mainPurple flex justify-center text-white">
+    <div className="min-h-[1110px] bg-mainPurple flex justify-center text-white ">
       <div className="w-[842px] pt-[116px] pb-[146px] max-sm:pt-[50px] max-md:pt-[80px] max-md:pb-[80px]">
         <motion.div
           className="flex flex-col gap-[30px] items-center max-sm:px-[20px] max-md:px-[50px]"
