@@ -5,15 +5,15 @@ import Reason from "./Reason";
 
 const WhyWhichride = () => {
   return (
-    <div className="h-[913px] flex relative justify-center">
+    <div className="min-h-[913px] flex relative justify-center">
       <p className="absolute top-[100px] text-center w-full font-[ceraProBold] text-[36px] leading-[40.5px]">
         Why Whichride
       </p>
-      <div className="bg-lightBlue  absolute top-0 left-0 w-[50%] h-full"></div>
-      <div className="bg  bg-white absolute top-0 right-0"></div>
-      <div className="w-[858px] mt-[199px] flex">
+      <div className="bg-lightBlue  absolute top-0 left-0 w-[50%] h-full "></div>
+      <div className=" bg-white absolute top-0 right-0"></div>
+      <div className="w-[858px] mt-[199px] flex max-md:flex-col max-sm:px-[20px] max-lg:px-[50px]">
         <motion.div
-          className="pr-[50px] flex-1"
+          className="pr-[50px] flex-1 max-md:pr-0 "
           variants={slideIn("left", "tween", 0.2, 1)}
           initial="hidden"
           whileInView={"show"}
@@ -27,7 +27,7 @@ const WhyWhichride = () => {
           })}
         </motion.div>
         <motion.div
-          className="pl-[50px] flex-1"
+          className="pl-[50px] flex-1 max-md:pl-0"
           variants={slideIn("right", "tween", 0.2, 1)}
           initial="hidden"
           whileInView={"show"}
